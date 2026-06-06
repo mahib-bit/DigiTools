@@ -37,7 +37,7 @@ const Navbar = () => {
                     <p>Login</p>
                 </div>
                 <div >
-                    <button className="btn bg-[#4F39F6] btn-primary rounded-3xl">Get Started</button>
+                    <button className="btn bg-[#4F39F6] rounded-3xl">Get Started</button>
                 </div>
             </div>
 
