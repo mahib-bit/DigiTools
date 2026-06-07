@@ -20,7 +20,7 @@ const Banner = () => {
         <button className='btn rounded-3xl bg-transparent text-[#4F39F6] border border-[#4F39F6] mt-5'><img src={play} alt="Play" /> Watch Demo</button>
       </div>
       </div>
-      <div>
+      <div className='md:w-[900px] sm:w-[1200px]'>
         <img src={BanImg} alt="Banner" />
       </div>
     </div>

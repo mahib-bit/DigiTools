@@ -2,6 +2,7 @@ import './App.css'
 import Navbar from './Components/Navbar/Navbar'
 import Banner from './Components/Banner/Banner'
 import Products from './Components/Products/Products'
+import Footer from './Components/Footer/Footer'
 import { Suspense } from "react";
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
       <Suspense fallback={<p>Loading...</p>}>
         <Products productsPromise={productsPromise} />
       </Suspense>
-
+      
+      <Footer />
     </>
   )
 }
