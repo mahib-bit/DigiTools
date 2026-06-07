@@ -1,14 +1,18 @@
 import 'react';
 import { useState } from 'react';
-
+import { toast } from 'react-toastify';
 
 const ProCard = ({ product, purchasedItems, setPurchasedItems }) => {
 
     const [isBought, setIsBought] = useState(false);
 
     const handleBuy = (productData) => {
-        setIsBought(true);
 
+        if (purchasedItems.length === 4) {
+            toast(" Cannot select more than 4 Items! ");
+            return;
+        }
+        setIsBought(true);
         setPurchasedItems([...purchasedItems, productData]);
     }
     return (

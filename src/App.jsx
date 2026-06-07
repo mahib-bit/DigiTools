@@ -6,15 +6,20 @@ import Footer from './Components/Footer/Footer'
 import Cart from './Components/Cart/Cart';
 import { useState } from 'react';
 import { Suspense } from "react";
+import { ToastContainer } from 'react-toastify';
+
+const productsPromise = fetch('product.json')
+  .then(res => res.json())
 
 function App() {
 
-  const productsPromise = fetch('product.json')
-    .then(res => res.json())
 
   const [toggle, setToggle] = useState(true);
   const [purchasedItems, setPurchasedItems] = useState([]);
 
+  const removeFromCart = (productId) => {
+    setPurchasedItems(purchasedItems.filter(item => item.id !== productId));
+  }
   return (
     <>
       <Navbar />
@@ -25,15 +30,16 @@ function App() {
       <div className='flex gap-3 mx-auto justify-center items-center'>
         <button onClick={() => setToggle(true)} className={`btn rounded-3xl ${toggle === true ? "bg-[#4F39F6]" : "text-[#4F39F6] border border-[#4F39F6]"}  mt-5`}>Products</button>
 
-        <button onClick={() => setToggle(false)} className={`btn rounded-3xl ${toggle === false ? "bg-[#4F39F6]" : "text-[#4F39F6] border border-[#4F39F6] bg-transparent"} mt-5`}>Cart (0)</button>
+        <button onClick={() => setToggle(false)} className={`btn rounded-3xl ${toggle === false ? "bg-[#4F39F6]" : "text-[#4F39F6] border border-[#4F39F6] bg-transparent"} mt-5`}>Cart ({purchasedItems.length}/4)</button>
       </div>
 
       {
         toggle === true ? <Suspense fallback={<p className='loading loading-spinner text-warning'></p>}>
-        <Products purchasedItems={purchasedItems} setPurchasedItems={setPurchasedItems} productsPromise={productsPromise} /> </Suspense> : <Cart purchasedItems={purchasedItems} />
+          <Products purchasedItems={purchasedItems} setPurchasedItems={setPurchasedItems} productsPromise={productsPromise} /> </Suspense> : <Cart purchasedItems={purchasedItems} removeFromCart={removeFromCart} />
       }
 
       <Footer />
+      <ToastContainer />
     </>
   )
 }

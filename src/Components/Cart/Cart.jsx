@@ -1,6 +1,6 @@
 import 'react';
 
-const Cart = ({ purchasedItems }) => {
+const Cart = ({ purchasedItems, removeFromCart }) => {
 
     return (
 
@@ -17,7 +17,7 @@ const Cart = ({ purchasedItems }) => {
                                 <p className='text-gray-600'>${product.price.toFixed(2)}</p>
                             </div>
                         </div>
-                        <p className='text-red-300'>Remove</p>
+                        <p className='text-red-300 cursor-pointer' onClick={() => removeFromCart(product.id)}>Remove</p>
                     </div>
                 ))
             }
