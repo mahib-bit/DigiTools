@@ -30,7 +30,7 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div className='flex-1 w-full max-w-[550px] lg:max-w-[650px] mt-8 lg:mt-0 flex justify-center'>
+      <div className='max-w-[550px] lg:max-w-[800px] mt-8 lg:mt-0 flex justify-around items-center'>
         <img 
           src={BanImg} 
           alt="Banner"
