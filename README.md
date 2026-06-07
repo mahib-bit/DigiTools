@@ -1,16 +1,69 @@
-# React + Vite
+🛍️ Digital Tools Buying Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive React-based e-commerce UI project where users can browse premium digital tools, add them to cart, and manage purchases with smooth UI interactions and toast notifications.
 
-Currently, two official plugins are available:
+Built as part of the A-6 assignment project, focusing on component design, state management, and real-world cart functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🚀 Live Demo
 
-## React Compiler
+https://ph-digi-tools.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧰 Technologies Used
+⚛️ React.js (with Hooks)
+🎨 Tailwind CSS
+🌼 DaisyUI
+🔔 React-Toastify
+📦 JSON (mock product data)
+⚡ JavaScript ES6+
+✨ Features
+🧭 Navigation System
+Responsive navbar
+Live cart counter
+Toggle between Products & Cart view
+🛒 Product System
+Dynamic product listing from JSON
+Beautiful product cards (3-column layout)
+Product details:
+Name, description, price
+Period (monthly/yearly/one-time)
+Tags (popular/new/best seller)
+Feature list
+Icon support
+🛍️ Cart Functionality
+Add products to cart
+Remove individual items
+Cart count updates in real time
+Proceed to checkout button clears cart
+Empty cart state handling
+🔔 Notifications
+React-Toastify for alerts:
+Added to cart
+Removed from cart
+Checkout success
+📱 Responsive Design
+Fully responsive for mobile, tablet, and desktop
+Clean UI following modern design patterns
+⚙️ Core Functionalities
+Toggle between Products & Cart view
+Prevent duplicate or invalid cart actions
+Limit cart items (max 4 products)
+State management using React Hooks
+Component-based architecture
+📦 Installation & Setup
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+npm run dev
+📁 Project Structure
+src/
+│── Components/
+│   ├── Navbar/
+│   ├── Banner/
+│   ├── Products/
+│   ├── ProCard/
+│   ├── Cart/
+│   ├── Footer/
+│
+│── App.jsx
+│── main.jsx
+│── product.json
