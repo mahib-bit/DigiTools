@@ -1,4 +1,4 @@
-🛍️ Digital Tools Buying Website
+#🛍️ Digital Tools Buying Website
 
 A modern and responsive React-based e-commerce UI project where users can browse premium digital tools, add them to cart, and manage purchases with smooth UI interactions and toast notifications.
 
@@ -8,7 +8,7 @@ Built as part of the A-6 assignment project, focusing on component design, state
 
 https://ph-digi-tools.netlify.app/
 
-🧰 Technologies Used
+#🧰 Technologies Used
 ⚛️ React.js (with Hooks)
 🎨 Tailwind CSS
 🌼 DaisyUI
@@ -20,7 +20,8 @@ https://ph-digi-tools.netlify.app/
 Responsive navbar
 Live cart counter
 Toggle between Products & Cart view
-🛒 Product System
+
+#🛒 Product System
 Dynamic product listing from JSON
 Beautiful product cards (3-column layout)
 Product details:
@@ -29,32 +30,38 @@ Period (monthly/yearly/one-time)
 Tags (popular/new/best seller)
 Feature list
 Icon support
-🛍️ Cart Functionality
+
+#🛍️ Cart Functionality
 Add products to cart
 Remove individual items
 Cart count updates in real time
 Proceed to checkout button clears cart
 Empty cart state handling
-🔔 Notifications
+
+#🔔 Notifications
 React-Toastify for alerts:
 Added to cart
 Removed from cart
 Checkout success
-📱 Responsive Design
+
+#📱 Responsive Design
 Fully responsive for mobile, tablet, and desktop
 Clean UI following modern design patterns
-⚙️ Core Functionalities
+
+#⚙️ Core Functionalities
 Toggle between Products & Cart view
 Prevent duplicate or invalid cart actions
 Limit cart items (max 4 products)
 State management using React Hooks
 Component-based architecture
-📦 Installation & Setup
+
+#📦 Installation & Setup
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 npm install
 npm run dev
-📁 Project Structure
+
+#📁 Project Structure
 src/
 │── Components/
 │   ├── Navbar/
