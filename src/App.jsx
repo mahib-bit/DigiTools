@@ -13,6 +13,7 @@ function App() {
     .then(res => res.json())
 
   const [toggle, setToggle] = useState(true);
+  const [purchasedItems, setPurchasedItems] = useState([]);
 
   return (
     <>
@@ -28,7 +29,8 @@ function App() {
       </div>
 
       {
-        toggle === true ? <Suspense fallback={<p className='loading loading-spinner text-warning'></p>}><Products productsPromise={productsPromise} /> </Suspense> : <Cart />
+        toggle === true ? <Suspense fallback={<p className='loading loading-spinner text-warning'></p>}>
+        <Products purchasedItems={purchasedItems} setPurchasedItems={setPurchasedItems} productsPromise={productsPromise} /> </Suspense> : <Cart purchasedItems={purchasedItems} />
       }
 
       <Footer />

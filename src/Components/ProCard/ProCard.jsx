@@ -2,12 +2,14 @@ import 'react';
 import { useState } from 'react';
 
 
-const ProCard = ({ product }) => {
+const ProCard = ({ product, purchasedItems, setPurchasedItems }) => {
 
     const [isBought, setIsBought] = useState(false);
 
-    const handleBuy = () => {
+    const handleBuy = (productData) => {
         setIsBought(true);
+
+        setPurchasedItems([...purchasedItems, productData]);
     }
     return (
         <div key={product.id}

@@ -1,17 +1,15 @@
 import 'react';
-import { use } from 'react';
 
-const Cart = ({ productsPromise }) => {
-    const products = use(productsPromise);
+const Cart = ({ purchasedItems }) => {
 
     return (
 
-        <div className='flex flex-col max-w-[1500px] mx-auto items-center justify-center gap-4 py-12 border border-gray-300 rounded-lg mt-7'>
+        <div className='flex flex-col max-w-[1500px] mx-auto items-center justify-center gap-4 py-12 mt-7 px-6'>
             <h1 className='text-2xl font-medium'>Your Cart</h1>
 
             {
-                products.map((product) => (
-                    <div key={product.id} className='flex items-center gap-4 border border-gray-200 rounded-lg p-4 w-full max-w-[600px]'>
+                purchasedItems.map((product) => (
+                    <div key={product.id} className='flex items-center gap-4 border border-gray-200 rounded-lg p-6 w-full justify-between '>
                         <div>
                             <span className='text-4xl'>{product.icon}</span>
                             <div>
@@ -23,8 +21,14 @@ const Cart = ({ productsPromise }) => {
                     </div>
                 ))
             }
-            <p className='text-center text-gray-600'>Total: ${products.reduce((sum, product) => sum + product.price, 0).toFixed(2)}</p>
-            <button className='btn bg-[#4F39F6] text-white rounded-xl'>Checkout</button>
+            <div className='flex items-center justify-between w-full max-w-[600px]'>
+                <p >Total: </p>
+                <p className=''>
+                    ${purchasedItems.reduce((sum, product) => sum + product.price, 0).toFixed(2)}
+                </p>
+            </div>
+
+            <button className='btn w-full rounded-xl bg-[#4F39F6] text-white '>Checkout</button>
         </div>
     );
 };
