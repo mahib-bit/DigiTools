@@ -1,76 +1,78 @@
-#🛍️ Digital Tools Buying Website
+# 🛍️ Digital Tools Buying Website
 
-A modern and responsive React-based e-commerce UI project where users can browse premium digital tools, add them to cart, and manage purchases with smooth UI interactions and toast notifications.
+A modern and responsive React-based e-commerce web application where users can explore premium digital tools, add them to cart, and manage purchases with smooth UI interactions and notifications.
 
-Built as part of the A-6 assignment project, focusing on component design, state management, and real-world cart functionality.
+This project was built as part of the **A-6 Assignment**, focusing on component-based architecture, state management, and real-world cart functionality.
 
-🚀 Live Demo
+---
 
+## 🚀 Live Demo
 https://ph-digi-tools.netlify.app/
 
-#🧰 Technologies Used
-⚛️ React.js (with Hooks)
-🎨 Tailwind CSS
-🌼 DaisyUI
-🔔 React-Toastify
-📦 JSON (mock product data)
-⚡ JavaScript ES6+
-✨ Features
-🧭 Navigation System
-Responsive navbar
-Live cart counter
-Toggle between Products & Cart view
+---
 
-#🛒 Product System
-Dynamic product listing from JSON
-Beautiful product cards (3-column layout)
-Product details:
-Name, description, price
-Period (monthly/yearly/one-time)
-Tags (popular/new/best seller)
-Feature list
-Icon support
+## ⚙️ Technologies Used
 
-#🛍️ Cart Functionality
-Add products to cart
-Remove individual items
-Cart count updates in real time
-Proceed to checkout button clears cart
-Empty cart state handling
+- React.js ⚛️
+- Tailwind CSS 🎨
+- DaisyUI 🌼
+- JavaScript (ES6+) 📜
+- React-Toastify 🔔
+- JSON Data Handling 📦
 
-#🔔 Notifications
-React-Toastify for alerts:
-Added to cart
-Removed from cart
-Checkout success
+---
 
-#📱 Responsive Design
-Fully responsive for mobile, tablet, and desktop
-Clean UI following modern design patterns
+## ✨ Features
 
-#⚙️ Core Functionalities
-Toggle between Products & Cart view
-Prevent duplicate or invalid cart actions
-Limit cart items (max 4 products)
-State management using React Hooks
-Component-based architecture
+### 🧭 Navbar
+- Responsive navigation bar
+- Live cart counter update
+- Toggle between Products and Cart view
 
-#📦 Installation & Setup
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-npm install
-npm run dev
+### 🎯 Banner Section
+- Heading, description, image, and CTA buttons
+- Fully responsive layout
 
-#📁 Project Structure
-src/
-│── Components/
-│   ├── Navbar/
-│   ├── Banner/
-│   ├── Products/
-│   ├── ProCard/
-│   ├── Cart/
-│   ├── Footer/
-│
-│── App.jsx
-│── main.jsx
-│── product.json
+### 📦 Products Section
+- 6–10 dynamic products from JSON
+- Beautiful 3-column responsive grid
+- Product details:
+  - Name & Description
+  - Price & Period
+  - Tag (popular / new / best seller)
+  - Feature list
+  - Icon support
+
+### 🛒 Cart Functionality
+- Add products to cart
+- Remove individual items
+- Maximum 4 products limit
+- Cart counter updates in navbar
+- Proceed to checkout clears cart
+- Empty cart state handling
+
+### 🔔 Notifications
+- React-Toastify alerts for:
+  - Add to cart
+  - Remove from cart
+  - Checkout success
+  - Limit warning
+
+### 📱 Responsive Design
+- Mobile, tablet, and desktop optimized
+- Clean UI with Tailwind + DaisyUI
+
+---
+
+## 🧠 What I Learned
+
+- React functional components
+- useState and props management
+- Conditional rendering
+- Cart logic implementation
+- Component reusability
+- Working with JSON data
+- Toast notification system
+
+---
+
